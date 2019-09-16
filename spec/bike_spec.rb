@@ -4,7 +4,7 @@ RSpec.describe Bike do
 
   it "responds to working" do
     bike = Bike.new
-  expect(bike.working?).to eq nil
+  expect(bike).to respond_to (:working?)
   end
 
 end
