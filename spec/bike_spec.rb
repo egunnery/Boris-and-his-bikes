@@ -2,9 +2,9 @@ require 'bike'
 
 RSpec.describe Bike do
 
-  it "responds to" do
-    check_if_working = Bike.new
-  expect(check_if_working.working).to eq nil
+  it "responds to working" do
+    bike = Bike.new
+  expect(bike.working?).to eq nil
   end
 
 end
