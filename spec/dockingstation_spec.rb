@@ -13,3 +13,5 @@ it "checks if bike is working" do
   expect(bike).to be_working
 end
 end
+
+#
