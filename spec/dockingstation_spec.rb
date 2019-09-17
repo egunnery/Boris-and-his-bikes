@@ -3,8 +3,8 @@ require 'docking_station'
 RSpec.describe DockingStation do
 
 it "releases bike" do
-  release_the_bike = DockingStation.new
-  expect(release_the_bike).to respond_to(:release_bike)
+  dockingstation = DockingStation.new
+  expect(dockingstation).to respond_to(:release_bike)
 end
 
 it "checks if bike is working" do
@@ -12,6 +12,9 @@ it "checks if bike is working" do
   bike = dockingstation.release_bike
   expect(bike).to be_working
 end
-end
 
-#
+it "docks a bike" do
+  dockingstation = DockingStation.new
+  expect(dockingstation).to respond_to(:dock)
+end
+end
